@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+       <!-- Code adapted from:  https://fonts.google.com/specimen/Plus+Jakarta+Sans -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,126 +11,204 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200&family=Square+Peg&display=swap" rel="stylesheet">    
+         <!-- Code adapted from:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <style>
+* {
+  box-sizing: border-box;
+}
         body {
-          background-color: rgb(255, 255, 255);
-          color: rgb(55, 55, 55);
+            background-color: rgb(255, 255, 255,.3);
+            background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/337742_150299101742444_890190238_o.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zFlNNfaZZgYAX8bQqLx&_nc_ht=scontent-iad3-1.xx&oh=00_AT9WoKg-D6pxs5Xa7LzmAILtHgwq1kkgzZ3-Y_RInrKU_w&oe=6285A889");
+            Margin: 0;
             font-family: 'Plus Jakarta Sans', sans-serif;
-    }
         }
         
-        h1 {
-          color: rgb(55, 55, 55);
+        .header {
+          font-size:68px;
+          letter-spacing: 2px;
+            margin: 0 0 0 0;
+          text-align: center;
+            color: rgb(55, 55, 55);
           font-family: 'Ms Madi', cursive;
           font-family: 'Square Peg', cursive;
         }
-        
-        div {  
-          color: rgb(55, 55, 55);
+
+        .DMForm {
+            font-size:20px; 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: 1px;
+            color: rgb(55, 55, 55);
         }
+
+        /* Style the top navigation bar */
+        .topnav {
+        overflow: hidden;
+        background-color: rgb(58, 57, 57);
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+        background-color: rgba(24, 175, 217, 0.447);
+        color: rgb(87, 80, 80);
+        }
+
+        /* Style the footer links */
+        footer a {
+        float: left;
+        display: block;
+        background-color: white;
+        color: #393939;
+        text-align: center;
+        padding: 14px 16px;
+        font-size:16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Change color on hover */
+        footer a:hover {
+        background-color: rgba(24, 175, 217, 0.447);
+        color: rgb(87, 80, 80);
+        }
+        p {  
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: #ffffffa0;
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .p1 {  
+                font-size:30px; 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: 1px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+
+            .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #b31a75;
+  color: white;
+}
         </style>
+        </head>
+
+                <!--above  div 1 & 2 style code adapted from:https://stackoverflow.com/questions/51067556/css-div-center-without-width-->
+                 <!--above  ol li code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid-->
+                    <!--above social media buttons code adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2-->
+
+                 <title>Contact Us | Dupont Market</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Dupont Market </title>
-
-    
 </head>
+
 <body>
-    <!-- Code adapted from: https://getbootstrap.com/docs/5.0/forms/overview/ -->
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-   <!-- Code adapted from: https://getbootstrap.com/docs/5.0/forms/form-control/ -->
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+    <div class="topnav">
+        <a href="Homepage.html">Homepage</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#Grocery">Grocery</a>
+        <a href="Contact.html">Contact Us</a>
+      </div>
 
-          
-      </form>
-
-      <form>
-        <div class="row mb-3">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
-          </div>
-        </div>
-        <fieldset class="row mb-3">
-          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                First radio
-              </label>
+    <div class="header">
+        <h1>Contact Us    <br></h1>
+        <p>
+            <br>  
+            <b>Dupont Circle Contact: </b><br>
+              1807 18th St NW #1, Washington, DC 20009
+            <br>
+            (202) 797-0222
+            <br><br>
+              <b>Hours of Operation:</b><br>
+           <i> Sun-Thurs:</i> 10am - 6pm;  &nbsp<i>Fri-Sat:</i> &nbsp 10am - 8pm</ul> 
+            <br>             <br>    
+            <a href="https://www.facebook.com/Dupont-Market-150297641742590/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dupontmarketdc/" class="fa fa-instagram"></a>
+            <br>    
+            <br>       
+   
+        <div class="P1">
+           <B>Contact Form</B> <BR>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-                Second radio
-              </label>
-            </div>
-            <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-              <label class="form-check-label" for="gridRadios3">
-                Third disabled radio
-              </label>
-            </div>
-          </div>
-        </fieldset>
-        <div class="row mb-3">
-          <div class="col-sm-10 offset-sm-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Example checkbox
-              </label>
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
+        <div class="DMForm">
 
+        <form
+        action="https://formspree.io/f/mjvlazeg"
+        method="POST"
+      >
+      <form action="/action_page.php">
+      <label for="fname"><b>First name:</b></label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <br> <label for="lname"><b>Last name:</b></label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <label>
+         <b>Your email:</b> 
+          <br> <input type="email" name="email">
+        </label><br><br>
+        <label for="lname"><b> Phone Number:</b> </label><br>
+        <input type="text" id="lname" name="lname" value="XXX-XXX-XXXX"><br><br>
+<P>
+        <br><b>What type of feedback do you have?</b><br><BR>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <input type="checkbox" id="person1" name="person1" value="Grocery">
+        <label for="person1">Inventory restock requests (Grocery; & Beer/Wine/Spirits)</label><br>
+        <input type="checkbox" id="person2" name="person2" value="Deli Menu">
+        <label for="person2">Menu: feedback, question, or ideas</label><br>
+        <input type="checkbox" id="person3" name="person3" value="Compliment">
+        <label for="person3">Good experience</label><br>
+        <input type="checkbox" id="person4" name="person4" value="Complaint">
+        <label for="person3">Not so great experience</label><br>
+        <input type="checkbox" id="person5" name="person5" value="Other">
+        <label for="person3">Something else</label><br><br>
+        </form>
+        <label>
+        <p><br><b>Briefly describe your feedback:</b><br>
+          <br> <textarea name="message"></textarea><br>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      <br> <br>
+</p>
+    </form>
+    </div>
+    <div class="header">
+     <h2>Thank you for reaching out!</h2>
+ </div>
+    <footer>
+        <a href="Homepage.html">Homepage</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#Grocery">Grocery</a>
+        <a href="Contact.html">Contact Us</a>
+    </footer>
+  
 </body>
 </html>
