@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200&family=Square+Peg&display=swap" rel="stylesheet">    
- 
 
  <style>
 * {
@@ -104,14 +103,19 @@
             content: "";
             display: table;
             clear: both;
-            
-            }
+                    }
 
             /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
             @media screen and (max-width:600px) {
             .column {
                 width: 100%;
             }
+            }
+            
+            /* Rounded border */
+            hr.rounded {
+            border-top: 15px solid rgba(255, 252, 252, 0.704);
+            border-radius: 15px rgba(255, 252, 252, 0.704);
             }
 
             ol {
@@ -128,6 +132,22 @@
                 margin: auto;
 }
 
+            ul {
+                text-align: left;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                background-color: #ffffffa0;
+                width: 33.33%;
+                height: 50%;
+
+
+            }
+            ul.list-group-horizontal {
+                text-align: left;
+                font-size: 16px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                margin: auto;
+                }
+                
         /* Style the footer links */
         footer a {
         float: left;
@@ -145,12 +165,37 @@
         color: rgb(87, 80, 80);
         }
 
+        .button {
+  background-color: #ffffff; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+}
+.button2:hover {background-color: #e7e7e7;}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.button2:hover {
+  background-color: #555555;
+  color: white;
+}
+
         </style>
         </head>
 
                    <!--above  div 1 & 2 style code adapted from:https://stackoverflow.com/questions/51067556/css-div-center-without-width-->
-                 <!--above  div 1 & 2 style code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid-->
-
+                 <!--above  ol li code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid-->
     <title>Welcome | Dupont Market</title>
 
     <meta charset="UTF-8">
@@ -219,24 +264,69 @@
                         </ol>
         </p>
         </div>
-        
+
         <div class="column">
-          <h2>Our Story</h2>
-          <p>We opened back in the 1990s and are one of the few longstanding, established neighborhood spots! <br> We are a grocery store...Deli...and Wine, Beer & Spirits retailer. Some say we are one of Dupont Circle's best kept secrets. We cannot confirm or deny - but we can promise that we are one of the few provisioners of the most elusive D.C. menu item: the breakfast burrito!                 <BR> We have brunch all day! <BR> 
-            <br> Come see for yourself. <br><br>
-                    
-        </p>
+          <h2>Menu and Grocery</h2>
+          <p><br><br> 
+            <button class="button button2">View Deli Menu</button>
+            <br><br> 
+            <button class="button button2">View Grocery Types</button>
+            <br><br> 
+
+      </p>
         </div>
       </div>
-
-
        <!-- Code adapted from:  https://getbootstrap.com/docs/5.0/content/typography/ -->
+       <hr class="rounded">
 
       <div class="header">
-        <h4>Grocery</h4>
+        <h2>Our Story</h2>
     </div>
+<p>            <br> <br> We opened back in the 1990s and are one of the few longstanding, established neighborhood haunts of Dupont. <br>  <br> We are a grocery store, deli, and Wine, Beer & Spirits retailer. <br> <br> 
+    Some say we are one of Dupont Circle's best kept secrets. We can't confirm or deny,  <br> but we can say that we are one of the few places where you can find a very elusive D.C. menu item: <br> the breakfast burrito.
+    <br> <br> Speaking of, did we mention that we have brunch all day?! <br> <br> Come see for yourself - we can't wait to meet you! <br><br>
+    </p>
 
     </body>
+
+           <hr class="rounded">
+
+      <div class="header">
+        <h2>Grocery</h2>
+    </div>
+<p>           
+    <ul class="list-group list-group-horizontal">    <br>
+ <b> Below are items we typically keep in stock    <br>
+ </b>    <br>
+
+        <li class="list-group-item.flex-fill">Produce</li>    <br>
+
+        <li class="list-group-item.flex-fill">Beverages</li>    <br>
+
+        <li class="list-group-item.flex-fill">Daily Bread Deliveries</li>    <br>
+
+        <li class="list-group-item.flex-fill">Dairy</li>    <br>
+
+        <li class="list-group-item.flex-fill">Produce</li>    <br>
+
+        <li class="list-group-item.flex-fill">Beverages</li>    <br>
+
+        <li class="list-group-item.flex-fill">Daily Bread Deliveries</li>    <br>
+
+        <li class="list-group-item.flex-fill">Snacks and non-perishables</li>    <br>
+
+        <li class="list-group-item.flex-fill">Household</li>
+        <br>
+
+
+
+      </ul>     
+</p>
+    </body>
+
+    <br>
+    <br>
+    <br>
 
     <footer>
             <a href="#">Homepage</a>
