@@ -37,14 +37,14 @@
         /* Style the top navigation bar */
         .topnav {
         overflow: hidden;
-        background-color: #333;
+        background-color: rgb(58, 57, 57);
         }
 
         /* Style the topnav links */
         .topnav a {
         float: left;
         display: block;
-        color: #393939;
+        color: #ffffff;
         text-align: center;
         padding: 14px 16px;
         font-family: 'Plus Jakarta Sans', sans-serif;
@@ -62,12 +62,6 @@
           text-align: center;
 
         }
-
-        .topnav {
-         overflow: hidden;
-        background-color: rgb(255, 255, 255); 
-        }
-
           p {  
             background-color: #ffffffa0;
             font-size: 16px;
@@ -132,9 +126,24 @@
                 font-size: 16px;
                 font-family: 'Plus Jakarta Sans', sans-serif;
                 margin: auto;
-
 }
 
+        /* Style the footer links */
+        footer a {
+        float: left;
+        display: block;
+        background-color: white;
+        color: #393939;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Change color on hover */
+        footer a:hover {
+        background-color: rgba(24, 175, 217, 0.447);
+        color: rgb(87, 80, 80);
+        }
 
         </style>
         </head>
@@ -154,6 +163,7 @@
     <div class="topnav">
         <a href="#">Homepage</a>
         <a href="#">Menu</a>
+        <a href="#">Grocery</a>
         <a href="#">Contact Us</a>
       </div>
 
@@ -211,8 +221,11 @@
         </div>
         
         <div class="column">
-          <h2>Our</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+          <h2>Our Story</h2>
+          <p>We opened back in the 1990s and are one of the few longstanding, established neighborhood spots! <br> We are a grocery store...Deli...and Wine, Beer & Spirits retailer. Some say we are one of Dupont Circle's best kept secrets. We cannot confirm or deny - but we can promise that we are one of the few provisioners of the most elusive D.C. menu item: the breakfast burrito!                 <BR> We have brunch all day! <BR> 
+            <br> Come see for yourself. <br><br>
+                    
+        </p>
         </div>
       </div>
 
@@ -223,42 +236,13 @@
         <h4>Grocery</h4>
     </div>
 
-
-        <!-- Code adapted from: https://getbootstrap.com/docs/5.0/layout/columns/ -->
-        <div class="container">
-            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Row column</div>
-              </div>
-            </div>
-          </div>
-    </div>
     </body>
+
+    <footer>
+            <a href="#">Homepage</a>
+            <a href="#">Menu</a>
+            <a href="#">Grocery</a>
+            <a href="#">Contact Us</a>
+    </footer>
+
 </html>
