@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+       <!-- Code adapted from:  https://fonts.google.com/specimen/Plus+Jakarta+Sans -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,63 +11,379 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200&family=Square+Peg&display=swap" rel="stylesheet">    
+
  <style>
+* {
+  box-sizing: border-box;
+}
         body {
-          background-color: rgb(255, 255, 255);
-          color: rgb(55, 55, 55);
+            background-color: rgb(255, 255, 255,.3);
+            background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/337742_150299101742444_890190238_o.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zFlNNfaZZgYAX8bQqLx&_nc_ht=scontent-iad3-1.xx&oh=00_AT9WoKg-D6pxs5Xa7LzmAILtHgwq1kkgzZ3-Y_RInrKU_w&oe=6285A889");
+            Margin: 0;
             font-family: 'Plus Jakarta Sans', sans-serif;
-    }
         }
         
-        h1 {
-          color: rgb(55, 55, 55);
+        .header {
+          font-size:68px;
+          letter-spacing: 2px;
+            margin: 0 0 0 0;
+          text-align: center;
+            color: rgb(55, 55, 55);
           font-family: 'Ms Madi', cursive;
           font-family: 'Square Peg', cursive;
         }
-        
-        div {  
-          color: rgb(55, 55, 55);
+
+        /* Style the top navigation bar */
+        .topnav {
+        overflow: hidden;
+        background-color: rgb(58, 57, 57);
         }
+
+        /* Style the topnav links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+        background-color: rgba(24, 175, 217, 0.447);
+        color: rgb(87, 80, 80);
+        }
+
+        div {  
+            color: rgb(55, 55, 55);
+          padding: 5px;
+          text-align: center;
+
+        }
+          p {  
+            background-color: #ffffffa0;
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+        .div1 {
+            position: relative;
+            box-sizing: border-box;
+            text-align: center;
+            margin: auto;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .div2 {
+            position: absolute;
+            background-color: #ffffffa0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 20px;
+            }
+
+            /* Create three equal columns that floats next to each other */
+            .column {
+            float: left;
+            width: 33.33%;
+            padding: 40px;
+            font-family: 'Ms Madi', cursive;
+          font-family: 'Square Peg', cursive;
+          text-align: center;
+          font-size: 28px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+                    }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+            }
+            
+            /* Rounded border */
+            hr.rounded {
+            border-top: 15px solid rgba(255, 252, 252, 0.704);
+            border-radius: 15px rgba(255, 252, 252, 0.704);
+            }
+
+            ol {
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                background-color: #ffffffa0;
+            }
+        
+            ol li {
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                margin: auto;
+}
+
+        /* Style the footer links */
+        footer a {
+        float: left;
+        display: block;
+        background-color: white;
+        color: #393939;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Change color on hover */
+        footer a:hover {
+        background-color: rgba(24, 175, 217, 0.447);
+        color: rgb(87, 80, 80);
+        }
+
+        .button {
+  background-color: #ffffff; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+}
+.button2:hover {background-color: #e7e7e7;}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.button2:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.accordion {
+  background-color: rgba(25, 25, 25, 0.741);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size: 16px;
+font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(159, 159, 159, 0.534);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: rgba(0, 0, 0, 0.416);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 16px;
+font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
         </style>
+        </head>
+
+                   <!--above  div 1 & 2 style code adapted from:https://stackoverflow.com/questions/51067556/css-div-center-without-width-->
+                 <!--above  ol li code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid-->
+    <title>Welcome | Dupont Market</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
+
 <body>
-        <!-- Code adapted from: https://getbootstrap.com/docs/5.0/components/navs-tabs/-->
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+    <div class="topnav">
+        <a href="Homepage.html">Homepage</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#Grocery">Grocery</a>
+        <a href="Contact.html">Contact Us</a>
       </div>
 
+    <div class="header">
+        <h1>Dupont Market Menu    <br></h1>
+    </div>
+
+    <button class="accordion"><b>Brunch All Day</b></button>
+    <div class="panel">
+      <p>
+          <img src="https://img.cdn4dd.com/p/fit=cover,width=600,format=auto,quality=50/media/photos/725dc043-7c3f-4f0b-889c-d4ba08d63785-retina-large-jpeg">
+         <br>
+         <b>Breakfast Burritos        </b> <br>
+          All Breakfast burritos come with Tomato, Red Onion and Green Peppers unless modified. Then pick your favorite protein or substitute Avocado no charge, your preferred style of eggs, and whatever extras you want served in your choice of tortillas with or without cheese and sour cream<br>
+          <br> 
+          <b>Assorted Pastry & Muffins</b> <br>
+        Red Velvet cream filled muffins really hit the spot, but so do the Croissant, Apple Bear Claws and others. See today's selection below! <br>
+        <br> 
+        <b>Avocado Toast</b> <br>
+        Start with your choice of Lyon Bakery's Award winning bread, add some ripe avocado then design your own creation. All come topped with your choice of Alfalfa Sprouts or Spinach
+        <br>
+        <br> 
+        <b>Bagel Sandwiches        </b> <br>
+        Pick your spreads and toppings served on toasted Whatsabagels <br>
+        <br> 
+        <b>Egg Sandwiches        </b> <br>
+        Endless options of breads and bagels; eggs fried, scrambled or just whites; assorted cheeses and fresh toppings will have you feeling like you made your customized bagel yourself without getting out of bed      <br>
+        <br> 
+        <b>Reuben (Delicious yet healthier version)        </b> <br>
+        First cut pastrami, corned beef or turkey with Sauerkraut, Swiss cheese & Russian dressing on Rye. <br>
+        <br> 
+    </p>
+    </div>
+    <br><br>
+
+    <button class="accordion"><b>Lunch & Linner</b></button>
+    <div class="panel">
+      <p>     <p>      <br>
+
+        <img src="https://img.cdn4dd.com/p/fit=cover,width=600,format=auto,quality=50/media/photos/2f1b1a14-8a22-40a0-875f-463fa713b5d1-retina-large-jpeg">
+       <br>
+       <b>Cheesesteaks        </b> <br>
+       Several Styles of Cheesesteaks for you to choose from. <BR> Start with your choice of Steak or Chicken then customize with peppers, onions, mushrooms etc and <BR> finally choose to top it with one of a variety of cheeses
+       <br> <i>Options include: Buffalo Chicken Cheesesteak, Cheesesteak Italiano, Korean Bulgogi Hoagie, Traditional Philly Cheesesteak(kind of) 
+    </i>
+    <br>      <br>
+
+    <img src="https://img.cdn4dd.com/p/fit=cover,width=600,format=auto,quality=50/media/photos/4729fb42-ac0c-49f0-b968-ebcf54e99933-retina-large-jpeg">
+    <br>
+        <b>Burritos & Wraps        </b> <br>
+        Choice of White, Wheat or Spinach Tortilla.<br> 
+        <i>Options include: Beef burrito, Kevin's special (turkey), Veggie Burrito, Chicken Burrito, Parmesan Ranch Chicken Wrap, and more</i> 
+        <br>      <br>
+
+        <img src="https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=jpeg,quality=50/media/photos/5ad3d8f6-51cc-4dc7-9757-94b8fe503aaa-retina-large-jpeg">
+        <br>
+            <b>Salads</b> <br>
+            Our Salads are huge and would be considered an entire meal for 1 or can easily shared between two or even three people as a side. The best salads are evenly coated with dressing so we have made our salads easy to mix in our large containers. Just add dressing, carefully hold container closed and shake to your hearts content **with sealed side of container facing you just in case, then eat from container or pour in a bowl or on a plate.<br> 
+            <i>Options include: Greek Salad (traditional or add Chicken), House Garden Salad </i> 
+            <br>      <br>
+
+            <img src="https://img.cdn4dd.com/p/fit=cover,width=600,format=auto,quality=50/media/photos/f290f38e-bfb0-42a7-b7db-5dee743d5a72-retina-large-jpeg">
+            <br>
+        <b>Chips, Dips & Snacks</b> <br>
+        Homemade Salsa, Hummus, Jalapeno Feta Spread, Dolmas, Desert Pepper Salsas and a huge variety of Potato chips and tortilla chips..
+      <br>      <br>
+
+      <img src="https://img.cdn4dd.com/p/fit=cover,width=600,format=auto,quality=50/media/photos/eb4c2e54-9be8-422a-a3fc-18654c2741c5-retina-large-jpeg">
+      <br>
+  <b>Beverages</b> <br>
+  Assorted 16.9 Oz - 20 Oz Sodas; Bai Antioxidant Infusions Assorted Flavors; Honest Tea; Dr. Browns; Red Bull; Iced Coffee; Sparkling Sodas; VYBES
+<br>
+    </div>
+    <br><br>
+
+    <button class="accordion"><b>Special Deals</b></button>
+    <div class="panel">
+        <br>
+
+        <br>
+    <b>At Dupont Market, we celebrate MEATLESS MONDAYS!!</b> <br>
+    <br>
+    Stay tuned as each Monday we will be offering a small selection of our experimental meatless dishes as we continue to revamp <BR> our menu for spring and summer. Your feedback is always greatly appreciated!
+    <br><br>
+
+    <b><U>APRIL SPECIALS</U></b> <br><br>
+
+    <b>Impossible Meatless Meatball Sub    </b> <br>
+    All made from scratch in house. Our spicy Arrabbiata sauce smothers these handmade vegetarian impossible meatballs <BR> and then topped with melted Provolone and Parmesan cheese served on your choice of bread
+   <BR> <I>Special price: $11.99</I>
+    <br>
+    <br>
+    <b>Spring Salad</b> <br>
+    Green leaf, grape tomatoes, red onion, carrots, celery, green peppers, arugula, cucumbers and radishes. <BR> Choice of house made dressings Greek, Caesar, Ranch, Thousand Island, or balsamic vinaigrette. <BR> You may also add for a fee: Bacon, Avocado, Chicken, Marinated Artichokes or Shaved Parmesan
+     <BR><I>Special price: $10.50</I>
+    <br>
+  <br>    </div>
+    <br><br>
 
 
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+<br><br>
+<br><br><br><br><br><br>
 
+<div class="div1">
+    <div class="div2">
+<br><b>Three ways to order:</b>
+    <ol>
+      <b><li>Call us: &nbsp </b><a href="tel:(202) 797-0222">(202) 797-0222</a></li><br>
+    <b><li>Order with <a href="https://www.doordash.com/store/dupont-market-washington-1594360/" target="https://www.doordash.com/store/dupont-market-washington-1594360/">DoorDash</a>:</b></li>
+      <a href="https://www.doordash.com/store/dupont-market-washington-1594360/" target="https://www.doordash.com/store/dupont-market-washington-1594360/">
+      <img src="https://pbs.twimg.com/profile_images/953514920435318785/7_O-NkAM.jpg" style="width 2em; height:2em;" class="rounded" alt="doordash logo"/>
+      </a> 
+    <b><li>Order with <a href="https://www.trycaviar.com/en-US" target="https://www.trycaviar.com/en-US">Caviar</a>:</b></li>
+          <a href="https://www.trycaviar.com/en-US" target="https://www.trycaviar.com/en-US">
+          <img src="https://pnggrid.com/wp-content/uploads/2021/05/Logo-Caviar-App-879x1024.png" style="width 2em; height:2em;" class="rounded" alt="caviar logo"/>
+      </a>
+              </ol>
+</div>
+</div>
 
+</i>
 
+    
+    </body>
 
+    <br>
+    <br>
+    <br>
 
+    <footer>
+        <a href="Homepage.html">Homepage</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#Grocery">Grocery</a>
+        <a href="Contact.html">Contact Us</a>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>
