@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
        <!-- Code adapted from:  https://fonts.google.com/specimen/Plus+Jakarta+Sans -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -9,59 +11,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200&family=Square+Peg&display=swap" rel="stylesheet">    
+ 
+    
+ 
  <style>
+* {
+  box-sizing: border-box;
+}
         body {
-          background-color: rgb(255, 255, 255);
-          color: rgb(55, 55, 55);
+            background-color: rgb(255, 255, 255,.3);
+            background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/337742_150299101742444_890190238_o.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zFlNNfaZZgYAX8bQqLx&_nc_ht=scontent-iad3-1.xx&oh=00_AT9WoKg-D6pxs5Xa7LzmAILtHgwq1kkgzZ3-Y_RInrKU_w&oe=6285A889");
+            Margin: 0    
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         
-        h1 {
+        .header {
           font-size:68px;
+          letter-spacing: 2px;
+            margin: 0 0 0 0;
+          text-align: center;
             color: rgb(55, 55, 55);
           font-family: 'Ms Madi', cursive;
           font-family: 'Square Peg', cursive;
         }
-        
-        div {  
-          color: rgb(55, 55, 55);
-          padding: 10px;
+
+        /* Style the top navigation bar */
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
         }
 
-        p {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-right: 20px;
-            margin-left: 20px;
+        /* Style the topnav links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: #393939;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+        background-color: rgba(24, 175, 217, 0.447);
+        color: rgb(87, 80, 80);
+        }
+
+        .div {  
+            color: rgb(55, 55, 55);
+          padding: 5px;
+          text-align: center;
+
+        }
+
+        .topnav {
+         overflow: hidden;
+        background-color: rgb(255, 255, 255); 
+        }
+
+          .p {  
+            background-color: #ffffff77;
+            text-align: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+        .div1 {
+            position: relative;
+            height: 100px;
+            width: 500px;
+            background-color: #ffffff77;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .div2 {
+            position: relative;
+            height: 100px;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+            /* Create three equal columns that floats next to each other */
+            .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
             }
         </style>
         </head>
+
+                   <!--above  div 1 & 2 style code adapted from:https://stackoverflow.com/questions/51067556/css-div-center-without-width-->
+                 <!--above  div 1 & 2 style code adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid-->
 
     <title>Welcome | Dupont Market</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-
-<div> <h1></p>Dupont Market</h1> </div>
-   <!-- Code adapted from:  https://getbootstrap.com/docs/5.0/content/typography/ -->
-   <div> <p class="lead">
-    An eclectic mix of the worlds finest wines, cheeses, meats, gourmet items as well as your every day grocery needs
-  </p>
-</div> 
-
-
 <body>
- 
+    <div class="topnav">
+        <a href="#">Homepage</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact Us</a>
+      </div>
 
-    <div>
-        <title>Grocery</title>
-        <h1 class="display-4">Grocery</h1>
+    <div class="header">
+        <h1>Dupont Market</h1>
+    </div>
+
+   <div class="div1">
+        <div class="div2">
+       An eclectic mix of the worlds finest wines, cheeses, meats, gourmet items as well as your every day grocery needs
+    </div>
+    </div> 
+    
+           <!-- Code adapted from:  https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid -->
+
+    <div class="row">
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+      </div>
+
+
+       <!-- Code adapted from:  https://getbootstrap.com/docs/5.0/content/typography/ -->
+
+      <div class="header">
+        <h4>Grocery</h4>
+    </div>
+
 
         <!-- Code adapted from: https://getbootstrap.com/docs/5.0/layout/columns/ -->
-       <body>
         <div class="container">
             <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
               <div class="col">
@@ -97,8 +208,5 @@
             </div>
           </div>
     </div>
-</body>
-</section>
-
-</body>
+    </body>
 </html>
