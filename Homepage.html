@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200&family=Square+Peg&display=swap" rel="stylesheet">    
  
-    
- 
+
  <style>
 * {
   box-sizing: border-box;
@@ -21,7 +20,7 @@
         body {
             background-color: rgb(255, 255, 255,.3);
             background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t31.18172-8/337742_150299101742444_890190238_o.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zFlNNfaZZgYAX8bQqLx&_nc_ht=scontent-iad3-1.xx&oh=00_AT9WoKg-D6pxs5Xa7LzmAILtHgwq1kkgzZ3-Y_RInrKU_w&oe=6285A889");
-            Margin: 0    
+            Margin: 0;
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         
@@ -57,7 +56,7 @@
         color: rgb(87, 80, 80);
         }
 
-        .div {  
+        div {  
             color: rgb(55, 55, 55);
           padding: 5px;
           text-align: center;
@@ -69,36 +68,41 @@
         background-color: rgb(255, 255, 255); 
         }
 
-          .p {  
-            background-color: #ffffff77;
+          p {  
+            background-color: #ffffffa0;
+            font-size: 16px;
             text-align: center;
             font-family: 'Plus Jakarta Sans', sans-serif;
             }
 
         .div1 {
             position: relative;
-            height: 100px;
-            width: 500px;
-            background-color: #ffffff77;
             box-sizing: border-box;
             text-align: center;
+            margin: auto;
             font-family: 'Plus Jakarta Sans', sans-serif;
             }
 
             .div2 {
-            position: relative;
-            height: 100px;
-            width: 500px;
+            position: absolute;
+            background-color: #ffffffa0;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            margin: auto;
             font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 20px;
             }
+
             /* Create three equal columns that floats next to each other */
             .column {
             float: left;
             width: 33.33%;
-            padding: 15px;
+            padding: 40px;
+            font-family: 'Ms Madi', cursive;
+          font-family: 'Square Peg', cursive;
+          text-align: center;
+          font-size: 28px;
             }
 
             /* Clear floats after the columns */
@@ -106,6 +110,7 @@
             content: "";
             display: table;
             clear: both;
+            
             }
 
             /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -114,6 +119,23 @@
                 width: 100%;
             }
             }
+
+            ol {
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                background-color: #ffffffa0;
+            }
+        
+            ol li {
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                margin: auto;
+
+}
+
+
         </style>
         </head>
 
@@ -141,7 +163,7 @@
 
    <div class="div1">
         <div class="div2">
-       An eclectic mix of the worlds finest wines, cheeses, meats, gourmet items as well as your every day grocery needs
+       <i> Bringing you an eclectic mix of the world's finest wines, cheeses, meats, gourmet items as well as your every day grocery needs</i>
     </div>
     </div> 
     
@@ -149,17 +171,47 @@
 
     <div class="row">
         <div class="column">
-          <h2>Column</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+          <h2>Find Us</h2>
+          <p>
+            <br>  
+            <b>Address:</b><br>
+              1807 18th St NW #1<br>
+              Washington, DC 20009
+            <br>
+            <br>
+              <b>Hours:</b><br>
+            Sun-Thurs: &nbsp 10am - 6pm<br>
+              Fri-Sat: &nbsp &nbsp 10am - 8pm</ul> 
+            <br> 
+            <br> 
+            <br> 
+
+          </p>
+        </div>
+    <!-- Hyperlinks adapted from: https://www.w3schools.com/css/css_link.asp -->
+        <div class="column">
+          <h2>Order Now</h2>
+          <p><br>Now offering three ways to order your next meal:
+              <ol>
+                <b><li>Call our kitchen: &nbsp </b><a href="tel:(202) 797-0222">(202) 797-0222</a></li><br>
+              <b><li>Order with <a href="https://www.doordash.com/store/dupont-market-washington-1594360/" target="https://www.doordash.com/store/dupont-market-washington-1594360/">DoorDash</a>:</b></li>
+              <div class="text-center">
+                <a href="https://www.doordash.com/store/dupont-market-washington-1594360/" target="https://www.doordash.com/store/dupont-market-washington-1594360/">
+                <img src="https://pbs.twimg.com/profile_images/953514920435318785/7_O-NkAM.jpg" style="width 2em; height:2em;" class="rounded" alt="doordash logo"/>
+                </a> 
+            </div>
+              <b><li>Order with <a href="https://www.trycaviar.com/en-US" target="https://www.trycaviar.com/en-US">Caviar</a>:</b></li>
+                <div class="text-center">
+                    <a href="https://www.trycaviar.com/en-US" target="https://www.trycaviar.com/en-US">
+                    <img src="https://pnggrid.com/wp-content/uploads/2021/05/Logo-Caviar-App-879x1024.png" style="width 2em; height:2em;" class="rounded" alt="caviar logo"/>
+                </a>
+                </div>
+                        </ol>
+        </p>
         </div>
         
         <div class="column">
-          <h2>Column</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-        </div>
-        
-        <div class="column">
-          <h2>Column</h2>
+          <h2>Our</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
         </div>
       </div>
